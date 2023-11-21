@@ -17,7 +17,7 @@ services:
     network_mode: host
     restart: unless-stopped
     ports:
-      9090:9090
+      -9090:9090
     volumes:
       - ./prometheus/:/etc/prometheus/
     command:
